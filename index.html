@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <title>omg wow!</title>
+    <head>
+        <link rel="stylesheet" href="./styles.css">
+        
+    </head> 
+    <body>
+        <div class="container">
+            <div >
+                <h1 class = "header_text">i know we just started taking but i still wanted to do something nice  
+                </h1>
+                <h1 class = "header_text">and i got sick so i made this (rizz) </h1>
+
+                <h1 class = "header_text">anyway uhhh wanna do something 
+                    for valentines day hehe
+                </h1>
+            </div>
+            <div class="gif_container">
+                <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExc3o0aDhsbmdycHRuaGpkdWtnZ3N0aGs2dWFxZXhldmR1YmV2cjlwciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/eLv7gJpxqiQtbNNQUe/giphy.gif" alt="Cute animated illustration">
+            </div>
+            <div class = "buttons">
+                <button class="btn" id = "yesButton" onclick="nextPage()">Yes :D</button>
+                <button class="btn" id="noButton" onmouseover="moveButton()" onclick="moveButton()">No :P</button>
+                <script>
+                    function nextPage() {
+                        window.location.href = "yes.html";
+                    }
+                    
+                    function moveButton() {
+                        var x = Math.random() * (window.innerWidth - document.getElementById('noButton').offsetWidth) - 85;
+                        var y = Math.random() * (window.innerHeight - document.getElementById('noButton').offsetHeight) - 48;
+                        document.getElementById('noButton').style.left = `${x}px`;
+                        document.getElementById('noButton').style.top = `${y}px`;
+                    }
+                </script> 
+            </div>
+        </div>
+       
+    </body> 
+</html>
